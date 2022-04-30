@@ -17,12 +17,13 @@
             <h2>Captions</h2>
             <p>Captions are generally given in the same language as the original content. It includes relevant sound effects or background noises because the intended audience is those who cannot hear the audio for some reasons.</p>
             <video controls>
-                <source src="assets/videos/dog-video.mp4">Your browser doesn't support the video tag!</video>
+                <source src="assets/videos/dog-video.mp4">
                 <track
                     src="assets/text-tracks/dog-video.vtt"
                     kind="captions"
-                    srclang="English"
-                    label="English Captions"/>
+                    srclang="en"
+                    label="English Captions"
+                    >
                 </video>
         </div>
         <div>
@@ -32,7 +33,15 @@
             <p>
                 Obviously, none of us can understand what pigeons are saying, so we'll just make up some subtitles! Create your own time stamps and invent your own dialog!
             </p>
-            <!-- TODO: Put the pigeons in love MP4 video here-->
+            <video controls>
+                <source src="assets/videos/pigeons-in-love.mp4">
+                <track 
+                    src="assets/text-tracks/pigeons-in-love-english.vtt"
+                    kind="subtitles"
+                    srclang="en"
+                    label="English Subtitles"
+                    >
+            </video>
             <!-- This video should have controls and two track tags (for example, for English AND French subtitles) -->
         </div>
     </main>
